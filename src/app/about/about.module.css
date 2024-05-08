@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    gap: 90px;
+}
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    flex: 1;
+}
+.imageContainer{
+    position: relative;
+    flex: 1;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info h1{
+    color: var(--btn);
+}
+.subtitle{
+    color: var(--btn);
+}
+.desc{
+    font-size: 20px;
+    font-weight: 300;
+}
+.photo{
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .info{
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
